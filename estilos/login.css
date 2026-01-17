@@ -41,7 +41,7 @@ section#login {
 }
 
 section#login > div#imagem {
-    background: url('../imagens/pexels-luana-scorsoni-2154631905-33448110.jpg') no-repeat center bottom;
+    background: url('../imagens/pexels-luana-scorsoni-2154631905-33448110.jpg') no-repeat;
     background-size: cover;
     height: 200px;
     display: block;
@@ -51,4 +51,13 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
