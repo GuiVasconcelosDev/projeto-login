@@ -41,9 +41,9 @@ section#login {
 }
 
 section#login > div#imagem {
-    background: url('../imagens/pexels-luana-scorsoni-2154631905-33448110.jpg') no-repeat;
+    background: url('../imagens/pexels-luana-scorsoni-2154631905-33448110.jpg') no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 100px;
     display: block;
 }
 
