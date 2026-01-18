@@ -71,6 +71,10 @@ form > div.campo {
     height: 40px;
     border-radius: 8px;
     margin: 5px 0px;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 div.campo > label {
@@ -81,18 +85,25 @@ div.campo > span {
     color: white;
     font-size: 2em;
     width: 40px;
+    text-align: center;
     padding: 5px;
+    flex-shrink: 0;
 }
 
 div.campo > input {
     background-color: #86ddda;
     font-size: 1em;
-    width: calc(100% - 44px);
-    transform: translateY(-11px);
+    border: none;
+
     height: 100%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
+    flex: 1;
+    padding: 0 10px;
+    border-radius: 0;
+    outline: none;
+
+    transform: none;
+    margin: 0;
+    width: auto;
 }
 
 div.campo > input:focus-within {
