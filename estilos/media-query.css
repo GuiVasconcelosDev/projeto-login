@@ -1,52 +1,83 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-    }
-    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login {
+    background-color: white;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+}
+
+div#imagem {
+    display: block;
+    height: 200px;
+    background: #333 url('../imagens/pexels-luana-scorsoni-2154631905-33448110.jpg') cover;
+}
+
+div#formulario {
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+
+div#formulario > h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
     section#login {
         width: 80vw;
-
+        height: 400px;
+        flex-direction: row;
     }
 
-    section#login > div#imagem {
-        float: left;
-        width: 30%;
+    div#imagem {
+        width: 40%;
         height: 100%;
     }
 
-    section#login > div#formulario {
-        float: right;
-        width: 70%;
+    div#formulario {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
     }
 }
 
 @media screen and (min-width: 992px) {
-    
-     body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-    }
-    
     section#login {
-        width: 920px;
+        width: 950px;
     }
 
-    section#imagem {
-        float: left;
-        width: 50%;
-        height: 100%;
-    }
-
-    section#login > div#formulario {
-        float: right;
+    div#imagem {
         width: 50%;
     }
-}
 
-div#formulario > h1 {
-   font-size: 2em;
-}
-
-div#formulario > p {
-    font-size: 1.2em;
+    div#formulario {
+        width: 50%;
+    }
 }
